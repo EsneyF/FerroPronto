@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferropronto - Corte e Dobra de aço</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="imagens/logo-secundaria.PNG">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
+
+<body>
+  <header>
+
+    <nav>
+
+      <!-- LOGO E MENU -->
+      <a class="logo" href="#">
+        <img src="imagens/logo-principal.jpg" alt="Logo" class="logo-img" />
+      </a>
+
+      <ul class="nav-list">
+        <li><a href="#" class="ativo">Home</a></li>
+        <li><a href="main.html" target="">A empresa</a></li>
+        <li><a href="#">Produtos</a></li>
+        <li><a href="#">Contatos</a></li>
+        <li><a href="#">Feedbacks</a></li>
+      </ul>
+
+      <!--INFO NA PAGINA HOME-->
+
+      <!--BOTÃlO ACESSIBILIDADE-->
+      <div class="div-botao">
+        <input type="checkbox" class="botao-cor" id="mudança-cor" />
+      </div>
+
+    </nav>
+
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+
+  <header>
+    <section class="especialidades" id="Contato">
+      <div class="interface">
+        <h2 class="titulo">FORMAS DE CONTATO</h2>
+        <div class="flex">
+          <div class="especialidades-box">
+            <i class="bi bi-telephone"></i>
+            <h3>Telefone</h3>
+            <p>(71) 93378-1425</p>
+          </div>
+          <div class="especialidades-box">
+            <i class="bi bi-envelope"></i>
+            <h3>E-mail</h3>
+            <p>ferropronto@ferropronto.net</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <!-- ABA CONTATOS-->
+  <main>
+    <div class="form-container">
+      <h2>Fale Conosco</h2>
+      <form id="contactForm">
+        <label for="motivo">Motivo:</label>
+        <select id="motivo" name="motivo" required>
+          <option value="">Selecione</option>
+          <option value="Cotação">Cotação</option>
+          <option value="Sugestão">Sugestão</option>
+          <option value="Elogio">Elogio</option>
+          <option value="Reclamação">Reclamação</option>
+          <option value="Denúncia">Denúncia</option>
+          <option value="Trabalhe Conosco">Trabalhe Conosco</option>
+          <option value="Outros">Outros</option>
+        </select>
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+        <button type="submit"><i class="bi bi-cursor"></i> Enviar Mensagem</button>
+      </form>
+    </div>
+  </main>
+
+  <!--RODAPÉ-->
+  <footer>
+    <div class="empresa">Ferropronto</div>
+    <div class="info">
+      <span class="destaque">Telefone:</span>
+      <span>71 3378-1425</span>
+    </div>
+    <div class="info">
+      <span class="destaque">E-mail:</span>
+      <span>ferropronto@ferropronto.net</span>
+    </div>
+    <div class="info">
+      <span class="destaque">Endereço:</span>
+      <span>Lot. Vida Nova, Micropolo Industrial Midas II, lote 09</span>
+      <span>Caji, Lauro de Freitas-BA, CEP 42717-820</span>
+    </div>
+    <div class="direitos">
+      &copy; 2025 Ferropronto. Todos os direitos reservados.
+    </div>
+  </footer>
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
